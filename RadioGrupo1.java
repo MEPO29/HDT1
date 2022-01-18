@@ -1,5 +1,5 @@
 /******************************************************************
-Ultima modificacion: 14/01/2022
+Ultima modificacion: 16/01/2022
 
 Clase radio grupo 1
 @file RadioGrupo1.java
@@ -15,7 +15,7 @@ public class RadioGrupo1 implements Radio{
     /**
      * Constructor.
      * Inicializa la frecuencia a true: AM
-     * La estación a 530
+     * La estacion a 530
      * Inicia en estado true: encendido
      */
     public RadioGrupo1(){
@@ -41,7 +41,7 @@ public class RadioGrupo1 implements Radio{
     }
 
     /**
-     * Establece una estación específica
+     * Establece una estacion especifica
      * @param estacion a establecer
      */
     public void setEstacion(double estacion) {
@@ -49,7 +49,7 @@ public class RadioGrupo1 implements Radio{
     }
 
     /**
-     * Indica si la radio está prendida
+     * Indica si la radio esta prendida
      * @return estado true - encendido / false - apagado
      */
 	@Override
@@ -58,7 +58,7 @@ public class RadioGrupo1 implements Radio{
 	}
 
 	/**
-	 * Apaga la radio cuando está encendida y viceversa
+	 * Apaga la radio cuando esta encendida y viceversa
 	 */
 	@Override
 	public void turnOnOff() {
@@ -68,7 +68,7 @@ public class RadioGrupo1 implements Radio{
 	}
 
 	/**
-	 * Avanza a la siguiente estación, si llega al límite, regresa al inicio
+	 * Avanza a la siguiente estacion, si llega al limite, regresa al inicio
 	 */
 	@Override
 	public void nextStation(boolean station) {
@@ -87,7 +87,7 @@ public class RadioGrupo1 implements Radio{
 	}
 
 	/**
-	 * Retrocede a la estación anterior, si llega al límite, regresa al final
+	 * Retrocede a la estacion anterior, si llega al limite, regresa al final
 	 */
 	@Override
 	public void prevStation(boolean station) {
@@ -107,7 +107,7 @@ public class RadioGrupo1 implements Radio{
 	}
 
 	/**
-	 * Indica la estación actual
+	 * Indica la estacion actual
 	 */
 	@Override
 	public double getStation() {
@@ -116,9 +116,9 @@ public class RadioGrupo1 implements Radio{
 	}
 
 	/**
-	 * Guarda la estación en el espacio escogido
-	 * @param position índice en el que se guarda
-	 * @param station estación a guardar
+	 * Guarda la estacion en el espacio escogido
+	 * @param position indice en el que se guarda
+	 * @param station estacion a guardar
 	 */
 	@Override
 	public void saveStation(int position, double station) {
@@ -128,8 +128,8 @@ public class RadioGrupo1 implements Radio{
 	}
 
 	/**
-	 * Indica la estación guardada y la pone en la radio
-	 * @return estación guardada
+	 * Indica la estacion guardada y la pone en la radio
+	 * @return estacion guardada
 	 */
 	@Override
 	public double getSavedStation(int position) {
@@ -150,7 +150,7 @@ public class RadioGrupo1 implements Radio{
 	}
 
 	/**
-	 * Cambia a AM si está en FM y viceversa
+	 * Cambia a AM si esta en FM y viceversa
 	 */
 	@Override
 	public void switchAMFM() {
