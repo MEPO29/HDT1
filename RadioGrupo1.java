@@ -135,6 +135,13 @@ public class RadioGrupo1 implements Radio{
 	public double getSavedStation(int position) {
 		// TODO Auto-generated method stub
 		estacion = this.guardados[position];
+		if (estacion == 0) {
+			if (frecuencia) {
+				estacion = 530;
+			} else {
+				estacion = 89.7;
+			}
+		}
 		frecuencia = estacion > 200;
 		return estacion;
 	}

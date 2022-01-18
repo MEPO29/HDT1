@@ -69,7 +69,8 @@ class RadioGrupo1Test {
 			fail("No tiro excepcion al intentar acceder a indice fuera de rango");
 		} catch (Exception e) {}
 		
-		
+		estacion = radio.getSavedStation(8);
+		assertEquals(530, estacion, 0.001, "Error al acceder a un espacio vacio");
 	}
 
 }
