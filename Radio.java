@@ -16,12 +16,12 @@ public interface Radio {
      * Move forward into the station dial.
      * @param station boolean indicating if the frequency is AM or FM. true = AM
      */
-    public void nextStation(boolean station);
+    public void nextStation(boolean frequency);
      /**
      * Move backwards into the station dial.
      * @param station boolean indicating if the frequency is AM or FM. true = AM.
      */
-    public void prevStation(boolean station);
+    public void prevStation(boolean frequency);
     /**
      * Get the current station selected.
      * @return double indicating the current station selected.
