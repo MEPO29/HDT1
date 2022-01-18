@@ -54,7 +54,7 @@ public class MainGrupo1{
         			try {
         				int boton = scan.nextInt();
         				scan.nextLine();
-        				if (0<boton&&13>boton) {
+        				if (0<boton&&12>=boton) {
         					radio.saveStation(boton, radio.getStation());
         					System.out.println("\nEmisora "+radio.getStation()+" guardada");
         				} else {
@@ -76,7 +76,7 @@ public class MainGrupo1{
         			try {
         				int boton = scan.nextInt();
         				scan.nextLine();
-        				if (0<boton&&13>boton) {
+        				if (0<boton&&12>=boton) {
         					double estacion = radio.getSavedStation(boton);
         					System.out.println("\nEstacion "+ estacion+" seleccionada");
         				} else {
