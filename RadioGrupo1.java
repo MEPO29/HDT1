@@ -71,7 +71,7 @@ public class RadioGrupo1 implements Radio{
 	 * Avanza a la siguiente estacion, si llega al limite, regresa al inicio
 	 */
 	@Override
-	public void nextStation(boolean station) {
+	public void nextStation(boolean frequency) {
 		// TODO Auto-generated method stub
 		if (frecuencia) {
 			estacion += 10;
@@ -90,7 +90,7 @@ public class RadioGrupo1 implements Radio{
 	 * Retrocede a la estacion anterior, si llega al limite, regresa al final
 	 */
 	@Override
-	public void prevStation(boolean station) {
+	public void prevStation(boolean frequency) {
 		// TODO Auto-generated method stub
 		if (frecuencia) {
 			estacion -= 10;
