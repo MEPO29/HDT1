@@ -55,7 +55,7 @@ public class MainGrupo1{
         				int boton = scan.nextInt();
         				scan.nextLine();
         				if (0<boton&&12>=boton) {
-        					radio.saveStation(boton, radio.getStation());
+        					radio.saveStation(boton-1, radio.getStation());
         					System.out.println("\nEmisora "+radio.getStation()+" guardada");
         				} else {
         					System.out.println("\nEl numero ingresado no es valido");
@@ -77,7 +77,7 @@ public class MainGrupo1{
         				int boton = scan.nextInt();
         				scan.nextLine();
         				if (0<boton&&12>=boton) {
-        					double estacion = radio.getSavedStation(boton);
+        					double estacion = radio.getSavedStation(boton-1);
         					System.out.println("\nEstacion "+ estacion+" seleccionada");
         				} else {
         					System.out.println("\nEl numero ingresado no es valido");
