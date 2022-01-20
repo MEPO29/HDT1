@@ -78,14 +78,9 @@ class RadioGrupo1Test {
 		
 		estacion = radio.getSavedStation(8);
 		assertEquals(530, estacion, 0.001, "Error al acceder a un espacio vacio");
+	}
 }
-	/**
-	*Evalua el metodo de getfrecuenci
-		*/
-		void testgetfrecuenci() {
-			RadioGrupo1 radio=newRadioGrupo1();
-			radio.getfrecuenci(2,35.8);
-			estacion=radio.getfrecuenci(2);
+	
 			
 			
 			
