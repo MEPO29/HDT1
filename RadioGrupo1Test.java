@@ -1,3 +1,10 @@
+/******************************************************************
+ Ultima modificacion: 19/01/2022
+
+ Clase radio grupo 1 test
+ @file RadioGrupo1Test.java
+
+ ******************************************************************/
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
